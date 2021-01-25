@@ -1,0 +1,12 @@
+name: simple_kalman
+description: A project to implement a one-dimensional Kalman filter in Dart language
+
+repository: https://github.com/leech001/SimpleKalman/tree/main
+issue_tracker: https://github.com/leech001/SimpleKalman/issues
+homepage: https://github.com/leech001/SimpleKalman
+#author: Leech001 <leech001@gmail.com>
+
+version: 0.0.1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
