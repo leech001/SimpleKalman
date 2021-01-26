@@ -1,11 +1,22 @@
+/// Here is a one-dimensional Kalman filter.
+///
+/// {@category Filter}
 class SimpleKalman {
+  /// value range
   final double errorMeasure;
-  final double q;
+
+  /// error range
   double errorEstimate;
+
+  /// filter sensitivity factor (0.001 ... 10)
+  final double q;
+
   double _lastEstimate = 0.0;
 
-  SimpleKalman(this.errorMeasure, this.errorEstimate, this.q);
+  /// Create Kalman filter object 
+  SimpleKalman({this.errorMeasure, this.errorEstimate, this.q});
 
+  /// Function to filter values
   double filtered(double value) {
     double _kalmanGain;
     double _currentEstimate;
