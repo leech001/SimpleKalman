@@ -5,7 +5,7 @@ repository: https://github.com/leech001/SimpleKalman/tree/main
 issue_tracker: https://github.com/leech001/SimpleKalman/issues
 homepage: https://github.com/leech001/SimpleKalman
 
-version: 0.0.2
+version: 0.0.2+1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
