@@ -12,7 +12,7 @@ Create Kalman filter
 import 'package:simple_kalman/simple_kalman.dart';
 
 void main() {
-  List<int> _data = [127, 0, 133, 136, 139, 256, 145, 148, 151];
+  var _data = <int>[127, 0, 133, 136, 139, 256, 145, 148, 151];
   
   var kalman = SimpleKalman(errorMeasure: 256, errorEstimate: 150, q: 0.9);
   for (final value in _data) {
