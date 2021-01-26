@@ -12,9 +12,9 @@ Create Kalman filter
 import 'package:simple_kalman/simple_kalman.dart';
 
 void main() {
-  var _data = <int>[127, 0, 133, 136, 139, 256, 145, 148, 151];
+  final _data = <int>[127, 0, 133, 136, 139, 256, 145, 148, 151];
   
-  var kalman = SimpleKalman(errorMeasure: 256, errorEstimate: 150, q: 0.9);
+  final kalman = SimpleKalman(errorMeasure: 256, errorEstimate: 150, q: 0.9);
   for (final value in _data) {
     print('Origin: $value Filtered: ${kalman.filtered(value.toDouble())}');
   }
