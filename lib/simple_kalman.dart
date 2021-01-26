@@ -13,7 +13,7 @@ class SimpleKalman {
 
   double _lastEstimate = 0.0;
 
-  /// Create Kalman filter object 
+  /// Create Kalman filter object
   SimpleKalman({this.errorMeasure, this.errorEstimate, this.q});
 
   /// Function to filter values
