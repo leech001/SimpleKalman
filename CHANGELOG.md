@@ -1,3 +1,6 @@
+## [1.0.0] - 2021-03-18
+- Migrated to null safety;
+
 ## [0.0.2+1] - 2021-01-26
 - Fixed warning pub.dev analyzer;
 
