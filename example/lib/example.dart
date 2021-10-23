@@ -262,6 +262,7 @@ void main() {
 
   final kalman = SimpleKalman(errorMeasure: 256, errorEstimate: 150, q: 0.9);
   for (final value in _sinData) {
+    // ignore: avoid_print
     print('Origin: $value Filtered: ${kalman.filtered(value.toDouble())}');
   }
 }
