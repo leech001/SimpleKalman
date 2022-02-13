@@ -1,3 +1,7 @@
+## [1.0.1] - 2022-02-13
+- add Dart Code Metrics;
+- update dependencies;
+
 ## [1.0.0] - 2021-03-18
 - Migrated to null safety;
 

@@ -13,7 +13,7 @@ void main() {
       2.32603235990328,
       3.7400931370644575,
       5.579413036698286,
-      7.803173710006007
+      7.803173710006007,
     ];
     final kalman = SimpleKalman(errorMeasure: 15, errorEstimate: 5, q: 0.9);
     for (var _i = 0; _i < _origin.length; _i++) {
