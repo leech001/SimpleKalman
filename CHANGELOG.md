@@ -1,3 +1,6 @@
+## [1.0.2] - 2023-03-26
+- update dependencies;
+
 ## [1.0.1] - 2022-02-13
 - add Dart Code Metrics;
 - update dependencies;

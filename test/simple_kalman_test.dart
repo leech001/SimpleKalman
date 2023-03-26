@@ -3,8 +3,8 @@ import 'package:simple_kalman/simple_kalman.dart';
 
 void main() {
   test('Test Kalman filter', () {
-    final _origin = <int>[0, 1, 3, 5, 7, 2, 11, 13, 15];
-    final _filtered = <double>[
+    final origin = <int>[0, 1, 3, 5, 7, 2, 11, 13, 15];
+    final filtered = <double>[
       0.0,
       0.2,
       0.6897689768976898,
@@ -16,8 +16,8 @@ void main() {
       7.803173710006007,
     ];
     final kalman = SimpleKalman(errorMeasure: 15, errorEstimate: 5, q: 0.9);
-    for (var _i = 0; _i < _origin.length; _i++) {
-      expect(kalman.filtered(_origin[_i].toDouble()), _filtered[_i]);
+    for (var i = 0; i < origin.length; i++) {
+      expect(kalman.filtered(origin[i].toDouble()), filtered[i]);
     }
   });
 }

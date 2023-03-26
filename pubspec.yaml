@@ -5,12 +5,13 @@ repository: https://github.com/leech001/SimpleKalman/tree/main
 issue_tracker: https://github.com/leech001/SimpleKalman/issues
 homepage: https://github.com/leech001/SimpleKalman
 
-version: 1.0.1
+version: 1.0.2
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.17.0 <4.0.0'
+  flutter: '>=3.7.0'
 
 dev_dependencies:
- flutter_lints: ^1.0.4
- dart_code_metrics: ^4.10.1
- test: ^1.20.1
+ flutter_lints: ^2.0.1
+ dart_code_metrics: ^5.7.0
+ test: ^1.24.0

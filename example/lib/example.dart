@@ -1,7 +1,7 @@
 import 'package:simple_kalman/simple_kalman.dart';
 
 void main() {
-  final _sinData = <int>[
+  final sinData = <int>[
     127,
     130,
     133,
@@ -261,7 +261,7 @@ void main() {
   ];
 
   final kalman = SimpleKalman(errorMeasure: 256, errorEstimate: 150, q: 0.9);
-  for (final value in _sinData) {
+  for (final value in sinData) {
     // ignore: avoid_print
     print('Origin: $value Filtered: ${kalman.filtered(value.toDouble())}');
   }

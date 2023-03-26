@@ -22,14 +22,14 @@ class SimpleKalman {
 
   /// Function to filter values
   double filtered(double value) {
-    double _kalmanGain;
-    double _currentEstimate;
-    _kalmanGain = errorEstimate / (errorEstimate + errorMeasure);
-    _currentEstimate = _lastEstimate + _kalmanGain * (value - _lastEstimate);
-    errorEstimate = (1.0 - _kalmanGain) * errorEstimate +
-        (_lastEstimate - _currentEstimate).abs() * q;
-    _lastEstimate = _currentEstimate;
+    double kalmanGain;
+    double currentEstimate;
+    kalmanGain = errorEstimate / (errorEstimate + errorMeasure);
+    currentEstimate = _lastEstimate + kalmanGain * (value - _lastEstimate);
+    errorEstimate = (1.0 - kalmanGain) * errorEstimate +
+        (_lastEstimate - currentEstimate).abs() * q;
+    _lastEstimate = currentEstimate;
 
-    return _currentEstimate;
+    return currentEstimate;
   }
 }
